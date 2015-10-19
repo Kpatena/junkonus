@@ -34,8 +34,9 @@
 			<?php echo form_open('loginController/register'); ?>
 				<input type="submit" value="Register">
 			</form>
-			<form>
-				<input type="submit" value="Guest">
+
+			<?php echo form_open('loginController/guest'); ?>
+				<input type="submit" value="Proceed as Guest">
 			</form>
 		</div>
     

@@ -10,6 +10,15 @@
 			$this->load->view('register');
 		}
 
+		public function guest(){
+			$data = array(
+				"is_guest" => 1
+			);
+
+			$this->session->set_userdata($data);
+			redirect('homeController/index');
+		}
+		
 		public function checkLogin() {
 
 			$this->form_validation->set_rules('username', 'Username', 'trim|required|valid_email|xss_clean');

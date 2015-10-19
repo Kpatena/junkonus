@@ -35,8 +35,9 @@
 			<?php echo form_open('loginController/index'); ?>
 				<input type="submit" value="Go back to Login">
 			</form>
-			<form>
-				<input type="submit" value="Guest">
+			
+			<?php echo form_open('loginController/guest'); ?>
+				<input type="submit" value="Proceed as Guest">
 			</form>
 		</div>
     

@@ -3,7 +3,7 @@
 	class homeController extends CI_controller {
 	
 		public function index() {
-			if($this->session->userdata('is_logged_in') == 1) {
+			if($this->session->userdata('is_logged_in') == 1 || $this->session->userdata('is_guest') == 1) {
 				$this->load->view('home');
 			} else {
 				redirect('loginController/index');
