@@ -1,0 +1,47 @@
+<paper-card class='fancy'>
+												<div class='card-content'>
+												<div class='avatar'>:)</div>
+												<div class='title'>
+												<div class='medium'><a href='#'>Box of Junk</a></div><div class='small'>It's a box of junk...</div></div></div><img src='http://placehold.it/350x150'><div class='card-content'>
+												<div class='small'>Posted Saturday 15/10/17 at 11:55pm</div></div></paper-card><paper-card class='fancy'>
+												<div class='card-content'>
+												<div class='avatar'>:)</div>
+												<div class='title'>
+												<div class='medium'><a href='#'>Another Item</a></div><div class='small'>This is the best description ever!</div></div></div><img src='http://placehold.it/350x150'><div class='card-content'>
+												<div class='small'>Posted Saturday 15/10/17 at 11:56pm</div></div></paper-card><paper-card class='fancy'>
+												<div class='card-content'>
+												<div class='avatar'>:)</div>
+												<div class='title'>
+												<div class='medium'><a href='#'>Yet Another Item</a></div><div class='small'>Please take my junk for free!</div></div></div><img src='http://placehold.it/350x150'><div class='card-content'>
+												<div class='small'>Posted Saturday 15/10/17 at 11:57pm</div></div></paper-card><paper-card class='fancy'>
+												<div class='card-content'>
+												<div class='avatar'>:)</div>
+												<div class='title'>
+												<div class='medium'><a href='#'>Toaster</a></div><div class='small'>A really cool toaster... This post is from mobile!</div></div></div><img src='http://placehold.it/350x150'><div class='card-content'>
+												<div class='small'>Posted Saturday 15/10/17 at 11:59pm</div></div></paper-card>
+<paper-card class='fancy'>
+												<div class='card-content'>
+												<div class='avatar'>:)</div>
+												<div class='title'>
+												<div class='medium'><a href='#'>Green Couch</a></div><div class='small'>Shabby but comfy</div></div></div><img src='http://placehold.it/350x150'><div class='card-content'>
+												<div class='small'>Posted Sunday 15/10/18 at 09:58am</div></div></paper-card><paper-card class='fancy'>
+												<div class='card-content'>
+												<div class='avatar'>:)</div>
+												<div class='title'>
+												<div class='medium'><a href='#'>whatever</a></div><div class='small'>description..asdfl;ksadjf;oas</div></div></div><img src='http://placehold.it/350x150'><div class='card-content'>
+												<div class='small'>Posted Monday 15/10/19 at 08:30am</div></div></paper-card><paper-card class='fancy'>
+												<div class='card-content'>
+												<div class='avatar'>:)</div>
+												<div class='title'>
+												<div class='medium'><a href='#'>a</a></div><div class='small'>a</div></div></div><img src='http://placehold.it/350x150'><div class='card-content'>
+												<div class='small'>Posted Monday 15/10/19 at 10:16am</div></div></paper-card><paper-card class='fancy'>
+												<div class='card-content'>
+												<div class='avatar'>:)</div>
+												<div class='title'>
+												<div class='medium'><a href='#'>desk</a></div><div class='small'>biiiiig desk</div></div></div><img src='http://placehold.it/350x150'><div class='card-content'>
+												<div class='small'>Posted Monday 15/10/19 at 09:44pm</div></div></paper-card><paper-card class='fancy'>
+												<div class='card-content'>
+												<div class='avatar'>:)</div>
+												<div class='title'>
+												<div class='medium'><a href='#'>asdfsa</a></div><div class='small'>asdfasdf</div></div></div><img src='http://placehold.it/350x150'><div class='card-content'>
+												<div class='small'>Posted Monday 15/10/19 at 10:27pm</div></div></paper-card>
