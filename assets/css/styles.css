@@ -41,7 +41,7 @@ body{
 
 .error{
 	position: absolute;
-	top: calc(50% - 80px);
+	top: calc(50% - 70px);
 	left: calc(50% + 250px);
 	z-index: 2;
 }
