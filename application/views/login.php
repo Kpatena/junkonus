@@ -20,6 +20,7 @@
 		</div>
 		<div class="error">
 			<div><?php echo validation_errors(); ?></div>
+			<div><?php echo $this->session->flashdata('success'); ?></div>
 		</div>
 		<br>
 		<div class="login">

@@ -10,7 +10,7 @@
 			if($this->form_validation->run()) {
 				$name = $this->input->post('regUser');
 				$pass = $this->input->post('regPass');
-
+				$this->session->set_flashdata('success', 'Registration Successful');
 				$this->load->model('loginModel');
 				$this->loginModel->register($name, $pass);
 				redirect('loginController/index');
