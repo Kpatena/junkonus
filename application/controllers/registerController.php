@@ -1,6 +1,6 @@
 <?php
 
-	class registerController extends CI_controller {
+	class RegisterController extends CI_controller {
 	
 		public function checkRegistration() {
 			$this->form_validation->set_rules('regUser', 'Username', 'trim|required|valid_email|xss_clean');
@@ -11,13 +11,15 @@
 				$name = $this->input->post('regUser');
 				$pass = $this->input->post('regPass');
 				$this->session->set_flashdata('success', 'Registration Successful');
-				$this->load->model('loginModel');
-				$this->loginModel->register($name, $pass);
-				redirect('loginController/index');
+
+				$this->load->model('LoginModel');
+				$this->LoginModel->register($name, $pass);
+				
+				redirect('LoginController/index');
 
 			} else {
 
-				$this->load->view('register');
+				$this->load->view('Register');
 			}
 
 		}

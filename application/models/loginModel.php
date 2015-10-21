@@ -1,6 +1,6 @@
 <?php
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class loginModel extends CI_Model{
+class LoginModel extends CI_Model{
  
     /**
      * returns a list of articles
@@ -8,7 +8,7 @@ class loginModel extends CI_Model{
      */
     public function login($username, $password) {
         
-        $stuff = $this->mongo_db->get('stuff');
+        $stuff = $this->mongo_db->get('users');
 
         
         foreach($stuff as $account) {
@@ -26,7 +26,7 @@ class loginModel extends CI_Model{
 
         $accountDetails = array("username" => $username, "password" => $password);
 
-        $this->mongo_db->insert('stuff', $accountDetails);
+        $this->mongo_db->insert('users', $accountDetails);
     }
     
 }

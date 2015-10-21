@@ -25,18 +25,18 @@
 		<br>
 		<div class="login">
 
-			<?php echo form_open('loginController/checkLogin'); ?>
+			<?php echo form_open('LoginController/checkLogin'); ?>
 
 				<input type="text" placeholder="username" name="username"><br>
 				<input type="password" placeholder="password" name="password"><br>
 				<input type="submit" value="Login">
 			</form>
 
-			<?php echo form_open('loginController/register'); ?>
+			<?php echo form_open('LoginController/register'); ?>
 				<input type="submit" value="Register">
 			</form>
 
-			<?php echo form_open('loginController/guest'); ?>
+			<?php echo form_open('LoginController/guest'); ?>
 				<input type="submit" value="Proceed as Guest">
 			</form>
 		</div>

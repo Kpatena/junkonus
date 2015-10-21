@@ -159,6 +159,26 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <iron-icon icon="mail"></iron-icon>
             <span>Contact</span>
           </a>
+
+          <a href="<?php echo base_url() . 'HomeController/map'?>">
+            <iron-icon icon="map"></iron-icon>
+            <span>Map</span>
+          </a>
+
+          <!-- Show logout when person has logged in otherwise show Sign Up -->
+          <?php 
+          if($this->session->userdata('is_logged_in') == 1) {
+            echo '<a href="' . base_url() . 'HomeController/logout">
+            <iron-icon icon="arrow-back"></iron-icon>
+            <span>Logout</span>
+          </a>';
+          } else {
+            echo '<a href="' . base_url() . 'LoginController/register">
+            <iron-icon icon="add-box"></iron-icon>
+            <span>Register</span>
+          </a>';
+          }
+          ?>
         </paper-menu>
       </paper-scroll-header-panel>
 

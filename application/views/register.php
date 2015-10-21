@@ -24,7 +24,7 @@
 		<br>
 		<div class="login">
 
-			<?php echo form_open('registerController/checkRegistration'); ?>
+			<?php echo form_open('RegisterController/checkRegistration'); ?>
 
 				<input type="text" placeholder="username" name="regUser"><br>
 				<input type="password" placeholder="password" name="regPass"><br>
@@ -32,11 +32,11 @@
 				<input type="submit" value="Register">
 			</form>
 
-			<?php echo form_open('loginController/index'); ?>
+			<?php echo form_open('LoginController/index'); ?>
 				<input type="submit" value="Go back to Login">
 			</form>
-			
-			<?php echo form_open('loginController/guest'); ?>
+
+			<?php echo form_open('LoginController/guest'); ?>
 				<input type="submit" value="Proceed as Guest">
 			</form>
 		</div>

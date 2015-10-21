@@ -1,13 +1,13 @@
 <?php
 
-	class loginController extends CI_controller {
+	class LoginController extends CI_controller {
 	
 		public function index() {
-			$this->load->view('login');
+			$this->load->view('Login');
 		}
 
 		public function register() {
-			$this->load->view('register');
+			$this->load->view('Register');
 		}
 
 		public function guest(){
@@ -16,7 +16,7 @@
 			);
 
 			$this->session->set_userdata($data);
-			redirect('homeController/index');
+			redirect('HomeController/index');
 		}
 		
 		public function checkLogin() {
@@ -32,9 +32,9 @@
 				);
 
 				$this->session->set_userdata($data);
-				redirect('homeController/index');
+				redirect('HomeController/index');
 			} else {
-				$this->load->view('login');
+				$this->load->view('Login');
 			}
 		}
 
@@ -42,14 +42,15 @@
 			$name = $this->input->post('username');
 			$pass = $this->input->post('password');
 
-			$this->load->model('loginModel');
+			$this->load->model('LoginModel');
 
-			if($this->loginModel->login($name, $pass)) {
+			if($this->LoginModel->login($name, $pass)) {
 				return true;
 			} else {
 				$this->form_validation->set_message('verifyUser', 'Incorrect Email or Password. Please try again.');
 				return false;
 			}
 		}
+
 	}
 ?>
