@@ -10,6 +10,10 @@
 			}
 		}
 
+		public function postComplete(){
+			$this->load->view('Home');
+		}
+
 		public function logout() {
 			$this->session->sess_destroy();
 			redirect('LoginController/index');

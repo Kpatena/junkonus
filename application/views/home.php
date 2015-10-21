@@ -236,13 +236,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 					<h2 class="page-title">Post Item</h2>
 					<p>Post anything you want to get rid of!</p>
 					<div class="form">
-						<form is="iron-form" id="formPost" method="post" action="<?php echo base_url(); ?>homeController/index#!/post-handler">
-						<paper-input name="name" label="Item Name" required></paper-input>
-						<paper-input name="description" label="Item Description" required></paper-input>
-						<br><br><br>
-						<!--<paper-button raised
-							onclick="clickHandler(event)" type="submit">Submit</paper-button>-->
-						<button type="submit">Submit</button>
+						<!--<form id="formPost" method="post" action="<?php echo base_url(); ?>homeController/index#!/post-handler">-->
+						<?php echo form_open('PostController/post'); ?>
+							<paper-input name="name" label="Item Name" required></paper-input>
+							<paper-input name="description" label="Item Description" required></paper-input><br/>
+							<select name="category">
+								<option value="mysterybag">Mystery Bag</option>
+								<option value="clothing">Clothing</option>
+								<option value="electronics">Electronics</option>
+								<option value="toys">Toys</option>
+								<option value="other">Other...</option>
+							</select>
+							<br><br><br>
+							<!--<paper-button raised
+								onclick="clickHandler(event)" type="submit">Submit</paper-button>-->
+							<button type="submit">Submit</button>
 						</form>
 					</div>
 				</paper-material>
@@ -266,6 +274,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 						
 						if($continue == true){
 							// write to file
+							$name = $this->input->post('name');
+							$description = $this->input->post('description');
+							$date = $this->input->post('date("l") . date("y/m/d") . date("h:ia")');
+							/*
 							$fhandler = @fopen("items.txt", "a") or die("file error");
 							
 							fwrite($fhandler, "<paper-card class='fancy'>
@@ -278,7 +290,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 							fwrite($fhandler, "<div class='card-content'>
 												<div class='small'>Posted " . date("l") . " " . date("y/m/d") . " at " . date("h:ia") . "</div></div></paper-card>");
 							
-							fclose($fhandler);
+							fclose($fhandler);*/
 							
 							echo "<p>Post Created!</p>";
 						}
@@ -288,6 +300,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 			
 			<section data-route="browse-posts">
 				<?php
+					/*
+					$cursor = $collection->find();
+
+					foreach($cursor as $document){
+						echo $document['name'] . "<br/>";
+						echo $document['description'] . "<br/>";
+					}
+
+					//echo '<a href="' . base_url() . 'PostController/readAll>';
+
+					$allPosts = $this->readAll();
+
+					foreach($allPosts as $post) {
+						echo $post;
+					}*/
+					
 					$array = file('items.txt');
 	
 					foreach($array as $oneline){
