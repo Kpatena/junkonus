@@ -11,9 +11,11 @@
 			redirect('HomeController/index');
 		}
 
-		public funtion readAll(){
+		public function readAll(){
 			$this->load->model('PostModel');
 			$allPost = $this->PostModel->readAll();
+
+			// PROCESS ARRAY INTO CARDS... SOMEHOW
 		}
 	}
 ?>
