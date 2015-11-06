@@ -240,6 +240,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 						<?php echo form_open('PostController/post'); ?>
 							<paper-input name="name" label="Item Name" required></paper-input>
 							<paper-input name="description" label="Item Description" required></paper-input><br/>
+              Category:
 							<select name="category">
 								<option value="mysterybag">Mystery Bag</option>
 								<option value="clothing">Clothing</option>
@@ -248,8 +249,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 								<option value="other">Other...</option>
 							</select>
 							<br><br><br>
-							<!--<paper-button raised
-								onclick="clickHandler(event)" type="submit">Submit</paper-button>-->
+							<!--<paper-button raised type="submit">Submit</paper-button>-->
 							<button type="submit">Submit</button>
 						</form>
 					</div>
