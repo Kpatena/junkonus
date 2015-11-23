@@ -27,5 +27,9 @@
 		public function map() {
 			$this->load->view('Map');
 		}
+
+		public function upload() {
+			$this->load->view('Upload_form');
+		}
 	}
 ?>

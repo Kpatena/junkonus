@@ -237,7 +237,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 					<p>Post anything you want to get rid of!</p>
 					<div class="form">
 						<!--<form id="formPost" method="post" action="<?php echo base_url(); ?>homeController/index#!/post-handler">-->
-						<?php echo form_open('PostController/post'); ?>
+						<?php echo form_open_multipart('PostController/do_upload'); ?>
 							<paper-input name="name" label="Item Name" required></paper-input>
 							<paper-input name="description" label="Item Description" required></paper-input><br/>
               Category:
@@ -247,8 +247,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 								<option value="electronics">Electronics</option>
 								<option value="toys">Toys</option>
 								<option value="other">Other...</option>
-							</select>
-							<br><br><br>
+							</select><br/><br/>
+              Upload Image:
+              <input type='file' name='userfile'><br/>
+							<br><br>
 							<!--<paper-button raised type="submit">Submit</paper-button>-->
 							<button type="submit">Submit</button>
 						</form>
